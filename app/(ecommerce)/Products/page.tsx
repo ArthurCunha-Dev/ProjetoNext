@@ -1,3 +1,5 @@
+
+
 type Product = {
     id: number;
     name: string;
@@ -17,6 +19,8 @@ function fetchProducts(): Promise<Product[]> {
 
 export default async function Products() {
     const products = await fetchProducts();
+    
+
     return (
         <div>
             <h1>Olá, página de produtos</h1>
